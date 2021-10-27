@@ -73,7 +73,7 @@ http.createServer((req, res) => {
 
     if(req.url === '/')
     res.writeHead(301, {
-        'Location': 'https://0.0.0.:443'
+        'Location': 'https://0.0.0.0:443'
     });
     res.end("hi");
 }).listen(80, '0.0.0.0', () =>{
